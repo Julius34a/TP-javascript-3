@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>EXERCICE JS ET CSS</title>
+    <link rel="stylesheet" type="text/css" href="TP-javascript-3.css">
+</head>
+
+<body>
+
+	<button id="Supprimer" onclick="Supprimer()">Supprimer</button>
+
+	<ul id="liste">
+	  <li>un</li>
+	  <li>deux</li>
+	  <li>trois</li>
+	</ul>	
+
+<script type="text/javascript" src="TP-javascript-3.js">
+
+liste = document.getElementById("liste");
+
+	function selectionne(e) {  
+
+		// e.target correspond au <li> qui a été cliqué dans le <ul> !  
+
+		e.target.classList.toggle("selected");
+	}
+
+liste.onclick = selectionne;
+
+	function Supprimer(){
+		for(i=0, i<liste.children.length, i++){
+			 if liste.children[i] = 		}
+
+	}
+
+</script>
+
+</body>
+</html>
